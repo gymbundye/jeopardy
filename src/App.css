@@ -6,6 +6,7 @@
   text-shadow: 1px 1px black;
   box-shadow: 10px 10px 10px black;
   border: solid black;
+  ;
 }
 .scoreDiv, .gameDiv{
   border: solid black;
@@ -14,5 +15,6 @@
   padding: 10px;
   text-shadow: 1px 1px black;
   box-shadow: 10px 10px 10px black;
+  margin: 5px ;
 
 }
