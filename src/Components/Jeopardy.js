@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Points from "./Points";
 
 function Jeopardy() {
   const [gameShow, setGameShow] = useState([]);
@@ -30,17 +31,19 @@ function Jeopardy() {
       });
   }
   return (
+
     <div className="gameDiv">
       
       {gameShow.map((gameShow, index) => (
         <div key={index}>
-          <button onClick={() => nextQ()}>Question Time</button>
-          <button onClick={() => setHideAnswer(!hideAnswer)}>Click</button>
+          <button onClick={() => nextQ()}>Next Question</button>
           <p>Category: {gameShow.category.title}</p>
           <p>Points: {gameShow.value}</p>
           <p>Answer: {gameShow.question}</p>
-          
-          {hideAnswer ? <p>Question:{gameShow.answer}</p> : null} <br />
+          <Points points={gameShow.value}/>
+          {console.log(gameShow.value)}
+          <button onClick={() => setHideAnswer(!hideAnswer)}>What is?</button>
+          {hideAnswer ? <p id="answerDiv">Question: {gameShow.answer}</p> : null} <br />
         </div>
       ))}
     </div>

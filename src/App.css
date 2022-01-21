@@ -6,15 +6,41 @@
   text-shadow: 1px 1px black;
   box-shadow: 10px 10px 10px black;
   border: solid black;
+}
+.Footer{
+  background-color: blue;
+  color: aliceblue;
+  padding: 5px;
+  text-shadow: 1px 1px black;
+  box-shadow: 10px 10px 10px black;
+  border: solid black;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
   ;
 }
-.scoreDiv, .gameDiv{
+ .gameDiv{
   border: solid black;
   background-color: blue;
   color: aliceblue;
   padding: 10px;
   text-shadow: 1px 1px black;
-  box-shadow: 10px 10px 10px black;
-  margin: 5px ;
+  box-shadow: 10px 10px 10px aliceblue;
+  margin: 20px ;
+  border-radius: 10px;
+  
+  height: 300px;
 
+
+}
+body{
+  background-color: black;
+}
+#answerDiv{
+  border: solid;
+  background-color: blue;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px aliceblue;
 }
